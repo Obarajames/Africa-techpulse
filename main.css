@@ -1,5 +1,6 @@
+/****import font from google font****/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+/*****variables for colors*****/
 :root{
     --white: #ddd;
     --dark: #111;
@@ -9,6 +10,7 @@
     --darkGreen: #61892f;
     --transition: all 0.5s ease;
 }
+/****universal selector****/
 *{
     padding: 0;
     margin: 0;
@@ -22,9 +24,11 @@ img{
     width: 100%;
     display: block;
 }
+/****unordered list and list item****/
 ul li{
     list-style: none;
 }
+/***style for all links****/
 a{
     text-decoration: none;
     color: #000;
@@ -33,7 +37,6 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 15px 0;
 }
 
-/********************** Utility Classes *******************/
 .flex{
     display: flex;
     justify-content: center;
@@ -66,10 +69,7 @@ h1, h2, h3, h4, h5, h6, p{
 .active{
     color: var(--lightGreen)!important;
 }
-
-/**************** end of Utility Classes *******************/
-
-/********************** Header styling *********************/
+/** Header styling **/
 
 .header{
     min-height: 100vh;
@@ -236,12 +236,12 @@ blockquote span{
     border-color: var(--lightGreen);
 }
 
-/********************* End of Header ***********************/
+/** End of Header**/
 
 
 
 
-/****************** blog.html ****************/
+/**** blog.html ****/
 
 /* section four */
 .section-four{
@@ -280,68 +280,6 @@ blockquote span{
 }
 
 /*************** end of blog.html ***********/
-
-
-
-/*************** contact.html **************/
-
-/* section five */
-.section-five{
-    margin: 40px 0;
-}
-.section-five .container div{
-    margin: 20px 0;
-}
-.contact-top{
-    text-align: center;
-}
-.contact-top h3{
-    font-size: 28px;
-}
-.contact-top p{
-    font-weight: 300;
-    width: 70%;
-    margin: 0 auto;
-}
-.contact-middle div{
-    text-align: center;
-    padding: 25px 0;
-    background: var(--dark);
-    color: #fff;
-}
-.contact-middle div span{
-    display: block;
-}
-.contact-icon{
-    font-size: 30px;
-}
-.contact-middle div span:nth-child(2){
-    font-size: 18px;
-    font-weight: bold;
-}
-.contact-middle div p{
-    font-weight: 300;
-    opacity: 0.7;
-}
-.contact-bottom{
-    margin-top: 50px!important;
-}
-.form input[type = "text"], .form input[type = "email"], .form textarea{
-    width: 100%;
-    font-size: 16px;
-    padding: 10px 15px;
-    margin: 10px 0;
-    border: 1px solid var(--lightGreen);
-    outline: none;
-    border-radius: 5px;
-}
-.contact-bottom .form{
-    padding: 0 20px;
-}
-
-/************** end of contact.html **********/
-
-
 
 /******************* Footer Styling *****************/
 
@@ -403,11 +341,11 @@ blockquote span{
     font-size: 14px;
 }
 
-/******************* end of footer ****************/
+/*** end of footer ***/
 
 
 
-/***************** Media Queries *****************/
+/*** Media Queries ***/
 
 @media screen and (min-width: 678px){
     /* section five */
